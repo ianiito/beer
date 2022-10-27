@@ -78,12 +78,18 @@ class Page{
         echo '<td>Brewery-type</td>';
         echo '<td>Price</td>';
         echo '<td>Quantitiy</td>';  
+        echo '<td>Total Price</td>;
         echo '</tr>';
         
         foreach($beers as $beer)
         {
             echo '<tr>';
-            echo '<td>'.$beer->
+            echo '<td>'.$beer->getName().'</td>';
+            echo '<td>'.$beer ->getType().'</td>';
+            echo '<td>'.$beer->getPrice().'</td>';
+            echo '<td>'.$beer->getNum().'</td>';
+            echo'<td>'.$beer->getTotalP().'</td>';
+            echo '</tr>';
         }
 
 
