@@ -49,9 +49,9 @@
     {
         $this->type = $n;
     }
-    // function setTotalP($n){
-    //     $this->totalP = $n;
-    // }
+     function setTotalP(){
+      $this->totalP=  $this->num * $this->price;
+     }
     function setNum($n)
     {
         $this->num = $n;
