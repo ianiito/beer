@@ -70,11 +70,22 @@ class Page{
 
     }
 
-    static function showBeerForm(array $beer)
+    static function showBeerForm(array $beers)
     {  
-        echo '<tr>';
-        
+        echo '<table class="table table-striped"><thead>'
+        echo '<tr><td>Id</td>';
+        echo '<td>Name</td>';
+        echo '<td>Brewery-type</td>';
+        echo '<td>Price</td>';
+        echo '<td>Quantitiy</td>';  
         echo '</tr>';
+        
+        foreach($beers as $beer)
+        {
+            echo '<tr>';
+            echo '<td>'.$beer->
+        }
+
 
 
     
